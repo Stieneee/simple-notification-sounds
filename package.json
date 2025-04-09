@@ -1,0 +1,64 @@
+{
+  "name": "simple-notification-sounds",
+  "version": "1.0.0",
+  "description": "Simple, tree-shakable browser audio notifications (success, alert, warning, attention, error) with short, medium, and long sounds.",
+  "homepage": "https://github.com/Stieneee/simple-notification-sounds#readme",
+  "bugs": {
+    "url": "https://github.com/Stieneee/simple-notification-sounds/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stieneee/simple-notification-sounds.git"
+  },
+  "license": "MIT",
+  "author": "Tyler Stiene <tystiene@gmail.com>",
+  "type": "module",
+  "main": "dist/simple-notification-sounds.umd.js",
+  "module": "dist/simple-notification-sounds.esm.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs && npm run build:umd",
+    "build:umd": "rollup -c rollup.umd.config.js",
+    "build:esm": "rollup -c rollup.esm.config.js",
+    "build:cjs": "rollup -c rollup.cjs.config.js",
+    "test": "echo \"No tests defined\" && exit 0"
+  },
+  "dependencies": {
+    "tone": "^15.0.4"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE.txt",
+    "demo.html",
+    "demo-screenshot.png",
+    "index.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/simple-notification-sounds.esm.js",
+      "require": "./dist/simple-notification-sounds.umd.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "browser": "dist/simple-notification-sounds.umd.js",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^2.79.2",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "keywords": [
+    "notification",
+    "sound",
+    "audio",
+    "alert",
+    "warning",
+    "success",
+    "attention",
+    "error",
+    "tone",
+    "feedback"
+  ]
+}

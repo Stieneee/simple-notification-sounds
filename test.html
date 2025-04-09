@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Notification Sounds Test</title>
+  </head>
+  <body>
+    <h1>Simple Notification Sounds Test</h1>
+    <div>
+      <button onclick="SimpleNotificationSounds.playSuccess('short')">
+        Play Short Success Sound
+      </button>
+      <button onclick="SimpleNotificationSounds.playSuccess()">
+        Play Success Sound (Medium)
+      </button>
+      <button onclick="SimpleNotificationSounds.playSuccess('long')">
+        Play Long Success Sound
+      </button>
+    </div>
+    <div>
+      <button onclick="SimpleNotificationSounds.playAttention('short')">
+        Play Short Attention Sound
+      </button>
+      <button onclick="SimpleNotificationSounds.playAttention()">
+        Play Attention Sound (Medium)
+      </button>
+      <button onclick="SimpleNotificationSounds.playAttention('long')">
+        Play Long Attention Sound
+      </button>
+    </div>
+    <div>
+      <button onclick="SimpleNotificationSounds.playAlert('short')">
+        Play Short Alert Sound
+      </button>
+      <button onclick="SimpleNotificationSounds.playAlert()">
+        Play Alert Sound (Medium)
+      </button>
+      <button onclick="SimpleNotificationSounds.playAlert('long')">
+        Play Long Alert Sound
+      </button>
+    </div>
+    <div>
+      <button onclick="SimpleNotificationSounds.playWarning('short')">
+        Play Short Warning Sound
+      </button>
+      <button onclick="SimpleNotificationSounds.playWarning()">
+        Play Warning Sound (Medium)
+      </button>
+      <button onclick="SimpleNotificationSounds.playWarning('long')">
+        Play Long Warning Sound
+      </button>
+    </div>
+    <div>
+      <button onclick="SimpleNotificationSounds.playError('short')">
+        Play Short Error Sound
+      </button>
+      <button onclick="SimpleNotificationSounds.playError()">
+        Play Error Sound (Medium)
+      </button>
+      <button onclick="SimpleNotificationSounds.playError('long')">
+        Play Long Error Sound
+      </button>
+    </div>
+    <script src="dist/simple-notification-sounds.umd.js"></script>
+    <script>
+      console.log(SimpleNotificationSounds);
+    </script>
+  </body>
+</html>
