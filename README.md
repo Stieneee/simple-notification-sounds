@@ -55,19 +55,6 @@ playWarning("long");
 </script>
 ```
 
-#### Local File
-
-```html
-<script src="dist/simple-notification-sounds.umd.js"></script>
-<script>
-  // Play a medium attention sound (default)
-  SimpleNotificationSounds.playAttention();
-
-  // Play a short error sound
-  SimpleNotificationSounds.playError("short");
-</script>
-```
-
 ## Sound Types and Use Cases
 
 Each sound is carefully designed with distinctive audio characteristics to convey specific meanings without requiring visual confirmation.
@@ -151,12 +138,7 @@ However, for convenience, this library is published to npm and automatically ava
 
 ## Browser Compatibility
 
-This library uses the Web Audio API and is compatible with all modern browsers:
-
-- Chrome 49+
-- Firefox 51+
-- Safari 9.1+
-- Edge 12+
+This library uses the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API#browser_compatibility) and is compatible with all modern browsers.
 
 ## License
 
